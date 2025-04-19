@@ -19,7 +19,7 @@ while True:
 
     cv2.imshow('img', img)
 
-    if cv2.waitKey(30) & 0xff == 27:  # Press ESC to exit
+    if cv2.waitKey(30) & 0xff == 27: 
         break
 
 cap.release()
