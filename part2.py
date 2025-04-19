@@ -5,6 +5,7 @@
 # cap = cv2.VideoCapture(0)
 
 # while True:
+
 #     success, img = cap.read()
 #     if not success:
 #         print("Failed to grab frame")
