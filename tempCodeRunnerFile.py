@@ -3,6 +3,7 @@ import cv2
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 cap = cv2.VideoCapture(0)
+
 while True:
 
     success, img = cap.read()
@@ -18,7 +19,7 @@ while True:
 
     cv2.imshow('img', img)
 
-    if cv2.waitKey(30) & 0xff == 27: 
+    if cv2.waitKey(30) & 0xff == 27:  # Press ESC to exit
         break
 
 cap.release()
