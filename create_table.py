@@ -41,5 +41,6 @@ create_database()
 
 # Insert example faces into the database
 insert_face('Ena', 'image/ena1.jpg')  # Path to your first image
-insert_face('mother', 'image/ammu.jpg')  # Path to your second image
-insert_face('Alice', 'image/taylor.jpg')  # Path to your third image
+insert_face('Ratul', 'image/ratul.png')  # Path to your second image
+insert_face('Taylor', 'image/taylor.jpg')  # Path to your third image
+insert_face('Tamim', 'image/Tamim.png')  # Path to your third image
