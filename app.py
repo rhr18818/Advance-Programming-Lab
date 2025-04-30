@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import sqlite3
 from datetime import datetime
-from part2 import recognize_face_from_base64  # Your modular function
+from face_recog import recognize_face_from_base64  # Your modular function
 from create_table import create_database, insert_face  # Importing from database.py
 
 app = Flask(__name__)
