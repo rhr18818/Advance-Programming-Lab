@@ -10,6 +10,7 @@ from PIL import Image
 known_face_encodings = []
 known_face_names = []
 
+<<<<<<< HEAD
 for filename in os.listdir("image"):
     path = os.path.join("image", filename)
     img = face_recognition.load_image_file(path)
@@ -21,6 +22,11 @@ for filename in os.listdir("image"):
         known_face_names.append(name)
     else:
         print(f" No face found in {filename}")
+=======
+cap = cv2.VideoCapture(0)
+
+while True:
+>>>>>>> 3efbd1c8418909bdd3e42274011b5450b381b014
 
 # === Function for use in Flask (web app) ===
 def recognize_face_from_base64(base64_string):

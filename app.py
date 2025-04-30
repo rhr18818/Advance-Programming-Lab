@@ -13,6 +13,7 @@ create_database()
 def index():
     return render_template('index.html', selected_date='', no_data=False)
 
+<<<<<<< HEAD
 @app.route('/attendance', methods=['POST'])
 def attendance():
     try:
@@ -63,6 +64,26 @@ def recognize():
     except Exception as e:
         print(f"Error in recognize route: {e}")
         return jsonify({"error": str(e)}), 500
+=======
+# @app.route('/attendance', methods=['POST'])
+#  def attendance():
+#     selected_date = request.form.get('selected_date')
+#     selected_date_obj = datetime.strptime(selected_date, '%Y-%m-%d')
+#     formatted_date = selected_date_obj.strftime('%Y-%m-%d')
+
+#     conn = sqlite3.connect('attendance.db')
+#     cursor = conn.cursor()
+
+#     cursor.execute("SELECT name, time FROM attendance WHERE date = ?", (formatted_date,))
+#     attendance_data = cursor.fetchall()
+
+#     conn.close()
+
+#     if not attendance_data:
+#         return render_template('index.html', selected_date=selected_date, no_data=True)
+    
+#     return render_template('index.html', selected_date=selected_date, attendance_data=attendance_data)
+>>>>>>> 3efbd1c8418909bdd3e42274011b5450b381b014
 
 if __name__ == '__main__':
     app.run(debug=True)
